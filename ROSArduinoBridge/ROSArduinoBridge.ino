@@ -6,7 +6,7 @@
     configuration assumes use of an Arduino Mega + Pololu motor
     controller shield + Robogaia Mega Encoder shield.  Edit the
     readEncoder() and setMotorSpeed() wrapper functions if using 
-    different motor controller or encoder method.
+    different motor controller or encoder method./home/robatics/workspaces/dev_ws/src/ros_arduino_bridge/ROSArduinoBridge/servos.ino
 
     Created for the Pi Robot Project: http://www.pirobot.org
     and the Home Brew Robotics Club (HBRC): http://hbrobotics.org
@@ -114,7 +114,7 @@
 
   /* Stop the robot if it hasn't received a movement command
    in this number of milliseconds */
-  #define AUTO_STOP_INTERVAL 2000
+  #define AUTO_STOP_INTERVAL 10000
   long lastMotorCommand = AUTO_STOP_INTERVAL;
 #endif
 
